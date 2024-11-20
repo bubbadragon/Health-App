@@ -4,12 +4,12 @@ from textwrap import dedent
 from crewai import Crew
 from decouple import config
 
-from agents import CustomAgents
-from tasks import CustomTasks
+from nutrition_branch.agents import CustomAgents
+from nutrition_branch.tasks import CustomTasks
 
 from tkinter import Tk, filedialog
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "API_KEY"
 
 def select_pdf_file():
     """Opens a file dialog for the user to select a PDF file."""
